@@ -1,4 +1,6 @@
 .header {
+    background-color: #FDFDFB;
+
     .container {
         @include flex-separate;
         @include flex-align-center;

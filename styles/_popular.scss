@@ -1,0 +1,99 @@
+.popular {
+    padding: 79px 0 86px;
+
+    &__title {
+        margin: 0;
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        line-height: 43px;
+        color: $titleColor;
+        text-align: center;
+    }
+
+    &__link-more {
+        display: block;
+        max-width: 105px;
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 25px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #C4C0B6;
+
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #444240;
+    }
+
+    &__cards {
+        @include flex-separate;
+    }
+}
+
+.card {
+    flex: calc(33.3% - 23px) 0 0;
+    padding: 40px 30px;
+    background-color: #FDFDFB;
+
+    &__title {
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(27, 26, 23, 0.82);
+    }
+
+    &__cost {
+        margin-left: 10px;
+        @include flex-align-center;
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+    }
+
+    &__icon-rub {
+        margin-left: 4px;
+        width: 8px;
+        height: 10px;
+        background-image: url(../img/ruble.svg);
+        background-size: contain;
+    }
+
+    &__pic {
+        @include flex-align-center;
+        @include flex-center;
+        margin-bottom: 19px;
+        width: 100%;
+        min-height: 313px;
+
+        background-image: url(../img/watch-back.svg);
+        background-position: right center;
+    }
+
+    &__img {
+        margin-right: 20px;
+    }
+
+    &__more {
+        @include flex-align-center;
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        line-height: 21px;
+        color: $titleColor;
+
+        .line {
+            margin-right: 18px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
