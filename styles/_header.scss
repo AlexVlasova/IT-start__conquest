@@ -1,0 +1,86 @@
+.header {
+    .container {
+        @include flex-separate;
+        @include flex-align-center;
+        padding: 30px;
+    }
+}
+
+.logo {
+    flex: 20% 0 0;
+    @include flex-align-center;
+
+    &__name {
+        margin-left: 5px;
+        font-family: 'Playfair Display';
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.14em;
+    }
+}
+
+.nav {
+    flex: 60% 0 0;
+
+    &__list {
+        @include flex-center;
+    }
+
+    &__item {
+        margin-right: 65px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        color: $textColor;
+    }
+}
+
+.options {
+    flex: 20% 0 0;
+    @include flex;
+    justify-content: end;
+
+    &__search {
+        width: 16px;
+        height: 16px;
+        margin-right: 23px;
+        background-image: url(../img/search-icon.svg);
+    }
+
+    &__buys {
+        width: 18px;
+        height: 16px;
+        background-image: url(../img/buys-icon.svg);
+    }
+
+    &__likes {
+        position: relative;
+        width: 20px;
+        height: 17px;
+        margin-right: 23px;
+        background-image: url(../img/likes-icon.svg);
+    }
+
+    &__notify {
+        @include flex-center;
+        @include flex-align-center;
+        position: absolute;
+        top: -5px;
+        right: -6px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: $accent;
+
+        font-size: 8px;
+        line-height: 9px;
+        color: $titleColor;
+    }
+}
