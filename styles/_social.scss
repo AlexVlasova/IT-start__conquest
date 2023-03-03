@@ -1,0 +1,71 @@
+.social {
+    padding: 81px 0 90px;
+
+    .container {
+        @include flex-separate;
+        @include flex-align-center;
+    }
+
+    &__left {
+        max-width: 500px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        font-family: 'Playfair Display';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: $titleColor;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 120px;
+        font-size: 16px;
+        line-height: 27px;
+        color: #444240;
+    }
+
+    &__icons {
+        @include flex-align-center;
+    }
+
+    &__icon-inst {
+        margin-right: 18px;
+        position: relative;
+    }
+
+    &__icon-fb {
+        margin-right: 18px;
+        position: relative;
+    }
+
+    &__icon-tw {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &__photos {
+        @include flex;
+        justify-content: end;
+    }
+
+    &__photo-left {
+        @include flex-vertical-center;
+        margin-right: 10px;
+    }
+
+    &__photo-top {
+        margin-bottom: 10px;
+    }
+}
