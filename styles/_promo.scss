@@ -1,0 +1,140 @@
+.promo {
+    .container {
+        @include flex;
+        overflow: hidden;
+    }
+
+    &__left {
+        @include flex-vertical;
+        flex: 50% 0 0;
+        padding-left: 87px;
+    }
+
+    &__right {
+        position: relative;
+        flex: 50% 0 0;
+    }
+
+    &__heading {
+        position: relative;
+
+        .line {
+            position: absolute;
+            top: 45%;
+            left: -65px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 16px;
+        font-family: 'Playfair Display';
+        font-size: 45px;
+        line-height: 60px;
+        color: $titleColor;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 39px;
+        font-family: 'Playfair Display';
+        font-size: 30px;
+        line-height: 40px;
+        color: $titleColor;
+    }
+
+    &__descr {
+        max-width: 260px;
+        margin: 0;
+        margin-bottom: 64px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: rgba(27, 26, 23, 0.82);
+    }
+
+    &__btn {
+        width: 205px;
+        padding: 26px 38px 27px;
+        background: #444240;
+        border: none;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__back-area {
+        position: absolute;
+        top: -10%;
+        left: -40%;
+        z-index: -2;
+        width: 1000px;
+        height: 950px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+        mix-blend-mode: normal;
+    }
+
+    &__back-ending {
+        position: absolute;
+        top: 0;
+        left: 45%;
+        z-index: -1;
+        width: 600px;
+        height: 100%;
+        background-color: $white;
+    }
+
+    &__watch-descr {
+        @include flex-align-center;
+        position: absolute;
+        right: 16px;
+        bottom: 116px;
+
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $titleColor;
+
+        .line {
+            margin-right: 15px;
+        }
+    }
+
+    &__cost {
+        @include flex-align-center;
+        position: absolute;
+        top: 138px;
+        left: -100px;
+
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $titleColor;
+    }
+
+    &__icon-rub {
+        width: 10px;
+        height: 13px;
+        background-image: url(../img/ruble.svg);
+        margin-left: 7px;
+        margin-right: 15px;
+    }
+}
+
+.line {
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+}
