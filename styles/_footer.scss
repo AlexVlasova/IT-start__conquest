@@ -1,0 +1,37 @@
+.footer {
+    background-color: #444240;
+    padding: 70px 0;
+
+    .container {
+        @include flex;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-bottom: 23px;
+        color: $white;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 33px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
